@@ -62,34 +62,28 @@ body{
     position: relative;
     transition: background-color 0.3s ease;
   }
-/* 
-  label.selected {
-    background-color: #e74971f4; 
-    color: #e74971f4; 
-    border: 2px solid #ff0000; 
-    padding: 10px;
-    border-radius: 5px;
-} */
- 
+
 input[type="radio"]
 {
     position: absolute;
     top: 23px;
     left: 15px;
 }
+.input-group label{
+  font-size: 2.8rem;  
+}
 
-input[type="radio"]:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 36.7%;
-    left: 15px;
-    transform: translateY(-50%);
-    width: 14px;
-    height: 14px;
-    background-color: #e74971f4; 
-    color: gray;
-    border-radius: 50%;
-} 
+input {
+  accent-color:#e74971f4;
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+input.custom {
+  accent-color: #e74971f4;
+  ;
+}
 
 label {
     display: flex;
@@ -154,15 +148,7 @@ label {
     width: 210px; 
     margin-bottom: 1px;
    }
-  
-  /* .option-group label {
-    margin:180px,0,180px,0;
-    font-size: 1em;
-  } */
-   
-
-
-    #size1,#size2
+   #size1,#size2
   {
     width: 75px;
     padding: 3px;
@@ -184,7 +170,7 @@ label {
    
   .standard-price {
     color: #060505;
-    font-size: 14px;    
+    font-size: 13px;    
     padding-left: 29px;
   }
   
